@@ -26,7 +26,7 @@ jobs:
     - name: Build and push mysql image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: a1-mysql
+        ECR_REPOSITORY: a1_mysql
         IMAGE_TAG: v1.0
       run: |
         cd Image_build/
